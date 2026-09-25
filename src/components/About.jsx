@@ -1,70 +1,77 @@
-export default function About(){
-    return (
-         <section id="about" className="section">
+export default function About() {
+  return (
+    <section id="about" className="section">
 
-        <div className="container">
+      <div className="container">
 
-          <p className="section-label">
-            ABOUT ME
-          </p>
+        <p className="section-label">
+          ABOUT US
+        </p>
 
-          <h2 className="section-title">
-            A little about me
-          </h2>
+        <h2 className="section-title">
+          About the business
+        </h2>
 
-          <div className="about-grid">
+        <div className="about-grid">
 
-            <div className="about-text">
+          <div className="about-text">
 
-              <p>
-                I'm a second-year Computer Science student with
-                an interest in software development, web
-                development and technology.
-              </p>
+            <p>
+              Welcome to our store. We provide carefully
+              selected products designed to enhance your
+              appearance and complement your personal style.
+            </p>
 
-              <p>
-                I enjoy creating practical applications and
-                websites that solve real problems. I'm constantly
-                learning and improving my programming skills by
-                working on different projects.
-              </p>
+            <p>
+              Our collection is focused on bringing customers
+              attractive and quality products while making the
+              shopping experience simple and convenient.
+            </p>
 
-              <p>
-                My experience so far includes working with
-                JavaScript, HTML, CSS, Python, Java, React and
-                WordPress.
-              </p>
+            <p>
+              Explore our collection, find something you love,
+              and contact us to place your order.
+            </p>
 
+          </div>
+
+
+          <div className="info-card">
+
+            <div className="info-item">
+              <span>Products</span>
+              <strong>
+                Beauty & appearance products
+              </strong>
             </div>
 
+            <div className="info-item">
+              <span>Orders</span>
+              <strong>
+                Contact us to place an order
+              </strong>
+            </div>
 
-            <div className="info-card">
+            <div className="info-item">
+              <span>Payment</span>
+              <strong>
+                Payment information coming soon
+              </strong>
+            </div>
 
-              <div className="info-item">
-                <span>Education</span>
-                <strong>University of Mines and Technology</strong>
-              </div>
-
-              <div className="info-item">
-                <span>Field</span>
-                <strong>Computer Science</strong>
-              </div>
-
-              <div className="info-item">
-                <span>Level</span>
-                <strong>Second Year</strong>
-              </div>
-
-              <div className="info-item">
-                <span>Focus</span>
-                <strong>Software & Web Development</strong>
-              </div>
-
+            <div className="info-item">
+              <span>Contact</span>
+              <strong>
+                Business contact information coming soon
+              </strong>
             </div>
 
           </div>
 
         </div>
 
-      </section>
-    )}
+      </div>
+
+    </section>
+  )
+}

@@ -1,7 +1,6 @@
 import './App.css'
 import Hero from './components/Hero.jsx'
 import About from './components/About.jsx'
-import Skills from './components/Skills.jsx'
 import Projects from './components/Projects.jsx'
 import Contact from './components/Contact.jsx'
 import Footer from './components/Footer.jsx'
@@ -15,27 +14,45 @@ function App() {
           ========================= */}
       <nav className="navbar">
 
-        <div className="logo">
-          Seddy<span>.</span>
-        </div>
+        <a href="#home" className="logo">
+          YOUR<span>LOGO</span>
+        </a>
 
         <div className="nav-links">
+          <a href="#home">Home</a>
+          <a href="#products">Collection</a>
           <a href="#about">About</a>
-          <a href="#skills">Skills</a>
-          <a href="#projects">Projects</a>
           <a href="#contact">Contact</a>
         </div>
 
       </nav>
-<Hero />
-<About />
-<Skills />
-<Projects />
-<Contact />
-<Footer />
+
+
+      {/* =========================
+          MAIN WEBSITE CONTENT
+          ========================= */}
+
+      <main>
+
+        <Hero />
+
+        <Projects />
+
+        <About />
+
+        <Contact />
+
+      </main>
+
+
+      {/* =========================
+          FOOTER
+          ========================= */}
+
+      <Footer />
+
     </div>
   )
 }
-      
 
 export default App

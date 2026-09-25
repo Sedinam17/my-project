@@ -1,128 +1,159 @@
+const products = [
+  {
+    id: 1,
+    name: 'Product Name',
+    price: 'Price to be added',
+    stock: 'Stock quantity',
+    colors: 'Available colors',
+    sizes: 'Available sizes',
+    description: 'Product description will be added here.',
+    image: null,
+  },
+
+  {
+    id: 2,
+    name: 'Product Name',
+    price: 'Price to be added',
+    stock: 'Stock quantity',
+    colors: 'Available colors',
+    sizes: 'Available sizes',
+    description: 'Product description will be added here.',
+    image: null,
+  },
+
+  {
+    id: 3,
+    name: 'Product Name',
+    price: 'Price to be added',
+    stock: 'Stock quantity',
+    colors: 'Available colors',
+    sizes: 'Available sizes',
+    description: 'Product description will be added here.',
+    image: null,
+  },
+]
+
+
 export default function Projects() {
-    return (
-        <section id="projects" className="section">
+  return (
+    <section id="products" className="section products-section">
 
-        <div className="container">
+      <div className="container">
 
-          <p className="section-label">
-            PROJECTS
-          </p>
+        <p className="section-label">
+          MOST PURCHASED
+        </p>
 
-          <h2 className="section-title">
-            Things I've built
-          </h2>
+        <h2 className="section-title">
+          Our popular collection
+        </h2>
 
-          <p className="section-description">
-            Some of the projects I've worked on while developing
-            my programming and software development skills.
-          </p>
-
-
-          <div className="projects">
+        <p className="section-description">
+          Explore some of our most purchased products.
+          Product availability, colors, sizes and prices
+          will be updated as products are added.
+        </p>
 
 
-            {/* Project 1 */}
-            <div className="project-card">
+        <div className="products">
 
-              <p className="project-number">
-                01
-              </p>
+          {products.map((product) => (
 
-              <h3>
-                Course Registration System
-              </h3>
+            <div
+              className="product-card"
+              key={product.id}
+            >
 
-              <p>
-                A software application designed to manage
-                student course registration and academic
-                records, including student information and
-                GPA calculations.
-              </p>
+              {/* Product Image */}
 
-              <div className="project-tags">
-                <span>Java</span>
-                <span>OOP</span>
-                <span>File Handling</span>
+              <div className="product-image">
+
+                {product.image ? (
+                  <img
+                    src={product.image}
+                    alt={product.name}
+                  />
+                ) : (
+                  <span>
+                    Product Image
+                  </span>
+                )}
+
               </div>
 
-              <a
-                href="#"
-                className="project-link"
-              >
-                View Project →
-              </a>
+
+              {/* Product Information */}
+
+              <div className="product-content">
+
+                <p className="product-number">
+                  {String(product.id).padStart(2, '0')}
+                </p>
+
+                <h3>
+                  {product.name}
+                </h3>
+
+                <p className="product-description">
+                  {product.description}
+                </p>
+
+
+                <div className="product-details">
+
+                  <div className="product-detail">
+                    <span>Price</span>
+                    <strong>{product.price}</strong>
+                  </div>
+
+                  <div className="product-detail">
+                    <span>Stock</span>
+                    <strong>{product.stock}</strong>
+                  </div>
+
+                  <div className="product-detail">
+                    <span>Colors</span>
+                    <strong>{product.colors}</strong>
+                  </div>
+
+                  <div className="product-detail">
+                    <span>Sizes</span>
+                    <strong>{product.sizes}</strong>
+                  </div>
+
+                </div>
+
+
+                <a
+                  href="#contact"
+                  className="product-link"
+                >
+                  Make an Order →
+                </a>
+
+              </div>
 
             </div>
 
-
-            {/* Project 2 */}
-            <div className="project-card">
-
-              <p className="project-number">
-                02
-              </p>
-
-              <h3>
-                Bakery Website
-              </h3>
-
-              <p>
-                A responsive website concept created for a
-                bakery business, focusing on clean design,
-                product presentation and usability.
-              </p>
-
-              <div className="project-tags">
-                <span>HTML</span>
-                <span>CSS</span>
-                <span>JavaScript</span>
-              </div>
-
-              <a
-                href="#"
-                className="project-link"
-              >
-                View Project →
-              </a>
-
-            </div>
-
-
-            {/* Project 3 */}
-            <div className="project-card">
-
-              <p className="project-number">
-                03
-              </p>
-
-              <h3>
-                University Management System
-              </h3>
-
-              <p>
-                A Java-based system designed to manage students,
-                lecturers, courses, registration and academic
-                records.
-              </p>
-
-              <div className="project-tags">
-                <span>Java</span>
-                <span>ArrayList</span>
-                <span>HashMap</span>
-              </div>
-
-              <a
-                href="#"
-                className="project-link"
-              >
-                View Project →
-              </a>
-
-            </div>
-
-          </div>
+          ))}
 
         </div>
 
-      </section>
-    ) }
+
+        <div className="collection-note">
+
+          <p>
+            Looking for something specific?
+          </p>
+
+          <a href="#contact">
+            Contact us about our collection →
+          </a>
+
+        </div>
+
+      </div>
+
+    </section>
+  )
+}
