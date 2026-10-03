@@ -1,77 +1,29 @@
+import { Link } from 'react-router-dom'
+
 export default function About() {
   return (
-    <section id="about" className="section">
-
+    <section id="about" className="section about-section">
       <div className="container">
-
-        <p className="section-label">
-          ABOUT US
-        </p>
-
-        <h2 className="section-title">
-          About the business
-        </h2>
-
         <div className="about-grid">
-
           <div className="about-text">
-
+            <p className="section-label">ABOUT US</p>
+            <h2 className="section-title">About Adorn Aura</h2>
+            <h3>We believe the little details can make you feel beautiful.</h3>
             <p>
-              Welcome to our store. We provide carefully
-              selected products designed to enhance your
-              appearance and complement your personal style.
+              Adorn Aura brings together beautiful accessories designed to
+              complement your everyday look and let your personal style shine.
             </p>
-
-            <p>
-              Our collection is focused on bringing customers
-              attractive and quality products while making the
-              shopping experience simple and convenient.
-            </p>
-
-            <p>
-              Explore our collection, find something you love,
-              and contact us to place your order.
-            </p>
-
+            <Link className="btn primary about-collection-link" to="/collection">
+              Explore Our Collection
+            </Link>
           </div>
-
-
-          <div className="info-card">
-
-            <div className="info-item">
-              <span>Products</span>
-              <strong>
-                Beauty & appearance products
-              </strong>
-            </div>
-
-            <div className="info-item">
-              <span>Orders</span>
-              <strong>
-                Contact us to place an order
-              </strong>
-            </div>
-
-            <div className="info-item">
-              <span>Payment</span>
-              <strong>
-                Payment information coming soon
-              </strong>
-            </div>
-
-            <div className="info-item">
-              <span>Contact</span>
-              <strong>
-                Business contact information coming soon
-              </strong>
-            </div>
-
+          <div className="about-art" aria-label="Adorn your glow">
+            <span className="about-art-kicker">ADORN AURA</span>
+            <p>ADORN<br />YOUR<br /><span>GLOW</span></p>
+            <span className="about-art-spark" aria-hidden="true">✦</span>
           </div>
-
         </div>
-
       </div>
-
     </section>
   )
 }

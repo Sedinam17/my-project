@@ -1,3 +1,5 @@
+import { FaSnapchatGhost, FaWhatsapp } from 'react-icons/fa'
+
 export default function Footer() {
   return (
     <footer className="footer">
@@ -7,13 +9,36 @@ export default function Footer() {
         <div className="footer-brand">
 
           <a href="#home" className="footer-logo">
-            YOUR<span>LOGO</span>
+            ADORN<span>AURA</span>
           </a>
 
           <p>
             Enhancing your appearance with products
             selected with you in mind.
           </p>
+
+          <div className="footer-socials" aria-label="Contact Adorn Aura">
+            <a
+              className="footer-social-link footer-whatsapp"
+              href="https://wa.me/233532549717"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Contact Adorn Aura on WhatsApp"
+              title="WhatsApp"
+            >
+              <FaWhatsapp aria-hidden="true" />
+            </a>
+            <a
+              className="footer-social-link footer-snapchat"
+              href="https://www.snapchat.com/add/jackline_konyoh"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Contact Adorn Aura on Snapchat"
+              title="Snapchat"
+            >
+              <FaSnapchatGhost aria-hidden="true" />
+            </a>
+          </div>
 
         </div>
 

@@ -9,58 +9,50 @@ export default function Contact() {
         </p>
 
         <h2 className="section-title">
-          Ready to place an order?
+          Get in touch
         </h2>
 
         <p className="section-description">
-          Found something you like? Contact the business owner
-          to confirm availability, place your order and get
-          information about payment and delivery.
+          Found something you love? Message us to ask about availability,
+          colors, ordering and delivery.
         </p>
 
 
         <div className="contact-content">
 
           <div className="contact-card">
-
             <h3>
-              Contact Information
+              WhatsApp
             </h3>
-
             <p>
-              Business contact details will be added here.
+              Chat with Adorn Aura at +233 53 254 9717.
             </p>
-
             <a
-              href="#"
+              href="https://wa.me/233532549717"
               className="contact-link"
+              target="_blank"
+              rel="noreferrer"
             >
-              Contact the Owner
+              Message on WhatsApp
             </a>
-
           </div>
-
 
           <div className="contact-card">
-
             <h3>
-              Payment Information
+              Snapchat
             </h3>
-
             <p>
-              Available payment methods will be added here
-              once they are provided by the business owner.
+              Follow or message us at jackline_konyoh.
             </p>
-
             <a
-              href="#"
+              href="https://www.snapchat.com/add/jackline_konyoh"
               className="contact-link"
+              target="_blank"
+              rel="noreferrer"
             >
-              Ask About Payment
+              Find us on Snapchat
             </a>
-
           </div>
-
         </div>
 
 
