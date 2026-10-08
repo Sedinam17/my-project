@@ -1,9 +1,9 @@
 import { Link } from 'react-router-dom'
 import bonnetImage from '../assets/images/bonnets/bonnet.jpeg'
 import scrunchiesImage from '../assets/images/scrunchies/scrunchies.jpg'
-import clipIMage from '../assets/images/clips/clip.jpeg'
-import bowImage from '../assets/images/bows/bows.jpg'
-import bandImage from '../assets/images/bands/bands.jpg'
+import clipIMage from '../assets/images/Clips/clip.jpeg'
+import bowImage from '../assets/images/Bows/bows.jpg'
+import bandImage from '../assets/images/Bands/bands.jpg'
 
 const categories = [
   {
